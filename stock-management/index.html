@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Stock Management System</h1>
+        <form id="stockForm">
+            <label for="item">Item:</label>
+            <input type="text" id="item" required>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" required>
+            <button type="submit">Add Item</button>
+        </form>
+
+        <h2>Stock List</h2>
+        <table id="stockTable">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dynamic content goes here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
