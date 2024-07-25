@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $password = $_POST['password']; // No hashing
 
     // Validate inputs
-    if (empty($employee_id) || empty($full_name) || empty($gmail) || empty($phone) || empty($dob) || empty($gender) || empty($resident_gps) || empty($position) || empty($bank_name) || empty($bank_account_number) || empty($password)) {
+    if (empty($employee_id)) {
         echo "All fields are required.";
         exit;
     }
